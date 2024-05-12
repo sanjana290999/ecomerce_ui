@@ -10,13 +10,13 @@ import {
 export default function Footer() {
   return (
     <div>
-      <div className="flex justify-evenly p-5 text-white text-xl bg-blue-950 mt-10">
+      <div className="flex justify-evenly p-3 text-white text-xl bg-blue-950 mt-10">
+        {/* <p>Osam Clothes</p>
         <p>Osam Clothes</p>
         <p>Osam Clothes</p>
         <p>Osam Clothes</p>
         <p>Osam Clothes</p>
-        <p>Osam Clothes</p>
-        <p>Osam Clothes</p>
+        <p>Osam Clothes</p> */}
       </div>
       <div className="flex justify-center text-center underline text-black">
         <p className="p-4 ">mumbai</p>
