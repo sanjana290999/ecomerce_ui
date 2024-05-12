@@ -1,0 +1,26 @@
+export const Bestseller = [
+  {
+    img: "./asset/images/shoes.webp",
+    name: "Lemon Twisted Netted",
+    slasherPrice: "4999",
+    price: "3999",
+  },
+  {
+    img: "./asset/images/sho-1.jpg",
+    name: "Lemon Twisted Netted",
+    slasherPrice: "4999",
+    price: "3999",
+  },
+  {
+    img: "./asset/images/sho-4.jpg",
+    name: "Lemon Twisted Netted",
+    slasherPrice: "4999",
+    price: "3999",
+  },
+  {
+    img: "./asset/images/sho-3.webp",
+    name: "Lemon Twisted Netted",
+    slasherPrice: "4999",
+    price: "3999",
+  },
+];
