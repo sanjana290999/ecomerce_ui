@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import Typewriter from "typewriter-effect";
 import Products from "./Products";
-// import { Bestseller } from "./ShoesData";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import { useState } from "react";
@@ -12,9 +11,9 @@ export default function HomePage() {
     <div>
       <Navbar />
       <div className="px-4 md:px-8 lg:px-16 xl:px-32">
-        <div className="relative flex flex-col items-center justify-center h-[60vh] bg-cover bg-no-repeat bg-center bg-gradient-to-b from-blue-900 to-blue-700 mt-5 overflow-hidden">
-          <div className="absolute top-1/2 transform -translate-y-1/2 text-white text-center z-10">
-            <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
+        <div className="relative flex flex-col md:flex-row items-center justify-center h-[60vh]  mt-5 overflow-hidden">
+          <div className="flex-1 text-white text-center md:text-left z-10 p-5 md:p-10">
+            <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-black">
               <Typewriter
                 options={{
                   strings: [`"DEEPTHI MOUNIKA FASHION APPAREL"`],
@@ -24,21 +23,24 @@ export default function HomePage() {
               />
             </p>
             <Link to="/Products">
-              <button className="bg-yellow-500 hover:bg-yellow-600 py-3 px-8 text-white text-lg font-bold rounded-lg mt-8 transition duration-300">
+              <button className="bg-teal-500 hover:bg-teal-600 py-3 px-8 text-white text-lg font-bold rounded-lg mt-8 transition duration-300">
                 Shop Now
               </button>
             </Link>
           </div>
-          <img
-            src="/asset/images/bg_img2.jpg"
-            alt="Background"
-            className="absolute inset-0 object-cover w-full h-full opacity-40 z-0"
-          />
+          <div className="flex-1">
+            <img
+              src="/asset/images/bg-1.webp"
+              alt="Background"
+              className="object-cover w-full h-full rounded-lg transform scale-125 md:scale-100"
+              style={{ clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)" }}
+            />
+          </div>
         </div>
-        <div className="mt-10">
+        <div className="mt-5">
           <Products name={"Bestseller"} />
         </div>
-        <div>
+        <div className="">
           <Footer />
         </div>
       </div>
