@@ -7,18 +7,19 @@ export default function ProductDetails() {
   const [productDetails, setProductDetails] = useState(null);
   // const routes = useRoutes();
   // console.log({ routes });
-  let { productId } = useParams();
+  // let { productId } = useParams();
 
-  // const {id} =
-  const handleProductData = async () => {
-    const response = await axios.get(
-      `${process.env.REACT_APP_BASE_URL}/products/${productId}`
-    );
-    setProductDetails(response.data);
-  };
-  useEffect(() => {
-    handleProductData();
-  }, []);
+  // // const {id} =
+  // const handleProductData = async () => {
+  //   const response = await axios.get(
+  //     `${process.env.REACT_APP_BASE_URL}/products/${productId}`
+  //   );
+  //   setProductDetails(response.data);
+  // };
+  
+  // useEffect(() => {
+  //   handleProductData();
+  // }, []);
   return (
     <>
       <Navbar />
