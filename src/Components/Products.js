@@ -22,9 +22,11 @@ export default function Products({ name, showAllButton }) {
   const getAllProducts = async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_BASE_URL}/ecommerce/products`
+        // `${process.env.REACT_APP_BASE_URL}/ecommerce/products`
+
+        "https://fakestoreapi.com/products"
       );
-      const data = response.data.data.products;
+      const data = response.data;
       console.log({ data });
       setProducts(data);
     } catch (error) {
